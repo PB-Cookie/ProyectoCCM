@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
 import { useState } from 'react'
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid2';
@@ -8,6 +8,7 @@ function Login() {
 
   return (
     <>
+      <Container>
         <Typography variant='h1'>Ejemplo de color</Typography>
         <Typography variant='h1' color='primary'>Ejemplo de color</Typography>
         <Typography variant='h1' color='secondary'>Ejemplo de color</Typography>
@@ -39,52 +40,52 @@ function Login() {
         <Typography variant='caption' color='primary'>caption.</Typography>
         <Typography variant='caption' color='secondary'>caption.</Typography>
 
-        <br/><br/>
+        <br /><br />
+      </Container>
 
-
-    {/* Para el region error */}
-    <footer> 
-    <Grid container spacing={4}>
-        <Button variant="text">Text</Button>
-        <Button variant="contained">Contained</Button>
-        <Button variant="outlined">Outlined</Button>
+      {/* Para el region error */}
+      <footer>
+        <Grid container spacing={4}>
+          <Button variant="text">Text</Button>
+          <Button variant="contained">Contained</Button>
+          <Button variant="outlined">Outlined</Button>
         </Grid>
 
 
-        <br/><br/>
+        <br /><br />
 
         <Grid container spacing={4}>
-        <Button variant="text" color='secondary'>Text</Button>
-        <Button variant="contained" color='secondary'>Contained</Button>
-        <Button variant="outlined" color='secondary'>Outlined</Button>
+          <Button variant="text" color='secondary'>Text</Button>
+          <Button variant="contained" color='secondary'>Contained</Button>
+          <Button variant="outlined" color='secondary'>Outlined</Button>
         </Grid>
-        
-        <br/><br/>
+
+        <br /><br />
 
         <Grid container spacing={4}>
-        <Button variant="text" color='error'>Text</Button>
-        <Button variant="contained" color='error'>Contained</Button>
-        <Button variant="outlined" color='error'>Outlined</Button>
+          <Button variant="text" color='error'>Text</Button>
+          <Button variant="contained" color='error'>Contained</Button>
+          <Button variant="outlined" color='error'>Outlined</Button>
         </Grid>
-        
-        
-        <br/><br/>
+
+
+        <br /><br />
 
         <Grid container spacing={4}>
-        <Button variant="text" color='success'>Text</Button>
-        <Button variant="contained" color='success'>Contained</Button>
-        <Button variant="outlined" color='success'>Outlined</Button>
+          <Button variant="text" color='success'>Text</Button>
+          <Button variant="contained" color='success'>Contained</Button>
+          <Button variant="outlined" color='success'>Outlined</Button>
         </Grid>
 
-        
-        <br/><br/>
+
+        <br /><br />
 
         <Grid container spacing={4}>
-        <Button variant="text" color='warning'>Text</Button>
-        <Button variant="contained" color='warning'>Contained</Button>
-        <Button variant="outlined" color='warning'>Outlined</Button>
+          <Button variant="text" color='warning'>Text</Button>
+          <Button variant="contained" color='warning'>Contained</Button>
+          <Button variant="outlined" color='warning'>Outlined</Button>
         </Grid>
-    </footer>
+      </footer>
 
     </>
   )
